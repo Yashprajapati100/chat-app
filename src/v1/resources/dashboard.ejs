@@ -1,0 +1,415 @@
+<%- include('layouts/header.ejs')%>
+    <%- include('layouts/modal.ejs')%>
+        <div id="content" class="p-4 p-md-5 pt-5">
+            <h2 class="mb-4">Hi! <%=user.name%>
+            </h2>
+            <div class="container chat-screen-container">
+
+                <div class="col-chat-left">
+                    <div class="search-top">
+                        <div class="form-group">
+                            <input type="text" placeholder="Search" class="form-control searchInput" />
+                            <button class=" search-btn"><i><img src="images/grey-search.svg" alt="" class="svgImg" />
+                                </i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="chat-person">
+                        <% if(users.length>0){
+                            for(let i=0;i<users.length;i++){ %>
+                                <div class="col-person-left cursor-pointer user-list" data-id='<%=users[i].id%>'
+                                    id='<%=users[i].id%>-profile'>
+                                    <% if(users[i].is_online==1) { %>
+                                        <label class="active-user" id="<%=users[i].id%>-status"></label>
+                                        <% }else{%>
+                                            <label class="inactive-user" id="<%=users[i].id%>-status"></label>
+                                            <% } %>
+                                                <div class="person-pic">
+                                                    <img src=<%=users[i].image%> alt="" class="img-fluid" />
+                                                </div>
+                                                <div class="person-detail">
+                                                    <h4>
+                                                        <%=users[i].name%>
+                                                    </h4>
+                                                    <% for(let x=0;x<recentchat.length;x++){
+                                                        if(recentchat[x].receiver_id==users[i].id
+                                                        ||recentchat[x].sender_id==users[i].id ){ %>
+                                                        <p id="<%=users[i].id%>-recent-chat">
+                                                            <%=recentchat[x].message%>
+                                                        </p>
+                                                        <% } } %>
+                                                </div>
+                                </div>
+                                <% } } %>
+                                    <!-- <div class="col-person-left"> data.data.id
+                        <div class="person-pic">
+                            <img src="images/user-pic-4.jpg" alt="" class="img-fluid" />
+                        </div>
+                        <div class="person-detail">
+                            <h4>Nicolas Smith</h4>
+                        </div>
+                    </div>
+                    <div class="col-person-left activeChat">
+                        <div class="person-pic">
+                            <img src="images/user-pic-4.jpg" alt="" class="img-fluid" />
+                        </div>
+                        <div class="person-detail">
+                            <h4>Nicolas Smith</h4>
+                        </div>
+                    </div> -->
+                    </div>
+                </div>
+                <div class="col-chat-right">
+                    <div id="header-right" class="header-right">
+                        <!-- profile pict -->
+                        <div id="header-img" class="profile header-img">
+                            <img src="images/ava2.jpg" alt="">
+                        </div>
+
+                        <!-- name -->
+
+                        <h4 class="name friend-name" id="friend-name">Mario Gomez</h4>
+                        <p id="subheader"></p>
+
+
+                        <!-- some btn -->
+                        <!-- <div class="some-btn">
+                            <span class="glyphicon glyphicon-facetime-video"></span>
+                            <span class="glyphicon glyphicon-earphone"></span>
+                            <span class="glyphicon glyphicon-option-vertical option-btn"></span>
+                        </div> -->
+                    </div>
+                    <div class="nav-height">
+
+                    </div>
+                    <div class="chat-screen">
+                        <!-- <div class="container"> -->
+                        <!-- <div class="chat-screen-inner">
+                        <div class="person-pic">
+                            <img src="images/user-pic-4.jpg" alt="" class="img-fluid" />
+                            <span>16:20</span>
+                        </div>
+                        <div class="chat-box">
+                            <p>It goes a little something like this.</p>
+                        </div>
+                    </div> -->
+                        <!-- </div>
+                    <div class="reply-container"> -->
+                        <!-- <div class="chat-screen-inner reply-screen">
+                            <div class="person-pic">
+                                <img src="images/user-pic-4.jpg" alt="" class="img-fluid" />
+                                <span>16:20</span>
+                            </div>
+                            <div class="chat-box">
+                                <p>RealHomes gracefully facilitates real estate</p>
+                            </div>
+                        </div> -->
+                        <!-- </div> -->
+
+
+                    </div>
+                    <form method="" id="chat-form" enctype="multipart/form-data">
+                        <div class="person-top-type-box type-message row ">
+
+                            <div class="person-type-name col-10"><textarea placeholder="Type your message"
+                                    name="message" id="message"></textarea>
+
+                            </div>
+                            <!-- <input type="file" name="fileupload"> -->
+                            <div class="person-action col-2">
+
+
+                                <button type="submit" class="addbtn"><i><img src="images/play.svg" class="svgImg"
+                                            alt="" /></i>
+                                </button>
+
+                            </div>
+
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <script>
+                $(document).ready(function () {
+                    var sender_id = '<%=user.id%>'
+                    var receiver_id
+                    var socket = io({ auth: { token: sender_id } });
+                    if (receiver_id == null) {
+                        $('.col-chat-right').hide()
+                    }
+
+                    // update user online status
+                    socket.on('useronline', (data) => {
+                        $('#' + data.user_id + '-status').removeClass('inactive-user')
+                        $('#' + data.user_id + '-status').addClass('active-user')
+                    })
+
+                    socket.on('useroffline', (data) => {
+                        $('#' + data.user_id + '-status').removeClass('active-user')
+                        $('#' + data.user_id + '-status').addClass('inactive-user')
+                    })
+
+
+
+
+                    $('.user-list').click(function () {
+                        $('.col-chat-right').show()
+
+                        receiver_id = $(this).attr('data-id')
+                        socket.emit('receiverdata', { receiver_id: receiver_id })
+                        socket.on('receiverprofile', (data) => {
+                            $('#friend-name').text(data.name)
+                            $('#header-img').children().attr("src", data.image)
+                            if (data.is_online == 1) {
+                                $('#subheader').text('online')
+                            }
+                            else {
+                                $('#subheader').text('')     
+                            }
+                        })
+                        $('.user-list').removeClass('activeChat')
+                        $('#' + receiver_id + '-profile').addClass('activeChat')
+                        socket.emit('existsChat', { sender_id: sender_id, receiver_id: receiver_id })
+
+
+
+                        let timer,
+                            timeoutVal = 1000; // time it takes to wait for user to stop typing in ms
+
+                        const status = document.getElementById('subheader');
+                        const typer = document.getElementById('message');
+
+                        typer.addEventListener('keypress', handleKeyPress);
+                        typer.addEventListener('keyup', handleKeyUp);
+
+                        // when user is pressing down on keys, clear the timeout
+                        function handleKeyPress(e) {
+                            window.clearTimeout(timer);
+                            console.log('Typing...')
+                            socket.emit('typingstatus', { data: sender_id })
+                        }
+
+                        // when the user has stopped pressing on keys, set the timeout
+                        // if the user presses on keys before the timeout is reached, then this timeout is canceled
+                        function handleKeyUp(e) {
+                            window.clearTimeout(timer); // prevent errant multiple timeouts from being generated
+                            timer = window.setTimeout(() => {
+                                console.log('not Typing...')
+                                $('#subheader').text('online') = '';
+                            }, timeoutVal);
+                        }
+                    })
+                    $('#chat-form').submit(function (event) {
+                        event.preventDefault();
+                        var message = $("#message").val();
+                        // if (message != '') {
+
+                        //     var formdata = {
+                        //         sender_id: sender_id,
+                        //         receiver_id: receiver_id,
+                        //         message: message
+                        //     }
+                        // }
+                        // else {
+                        //     formdata = {
+                        //         sender_id: sender_id,
+                        //         receiver_id: receiver_id,
+                        //     }
+                        // }
+                        $.ajax({
+                            url: '/savechat',
+                            type: "POST",
+                            data: {
+                                sender_id: sender_id,
+                                receiver_id: receiver_id,
+                                message: message
+                            },
+                            enctype: "multipart/form-data",
+                            success: function (response) {
+                                if (response.success) {
+                                    let chat = response.data.message
+                                    let html = `<div class='datedisplay' id='` + response.data.id + `-date'>` + response.data.date + `</div>
+                                    <div class="chat-screen-inner reply-screen" id="` + response.data.id + `">
+                        <div class="person-pic">
+                            <img src="<%=user.image%>" alt="" class="img-fluid" />
+                            <span>` + response.data.time + `</span>
+                        </div>
+                        <div class="chat-box">
+                            <p>`+ chat + ` <button class="btn delete-icon" ><i class="fa fa-trash"></i></button><button class="btn edit-icon" ><i class="fa fa-edit"></i></button></p>
+                        </div>
+                    </div>`
+                                    $('.chat-screen').append(html)
+                                    $('#' + response.data.receiver_id + '-recent-chat').html(response.data.message)
+                                    socket.emit('newchat', { data: response.data, image: response.receiverimage })
+                                    scrollChat()
+                                }
+                                else {
+                                    alert(response.msg)
+                                }
+                            }
+                        });
+                    })
+
+
+                    // load new chat 
+                    socket.on('loadnewchat', (data) => {
+
+                        if (data.data.receiver_id == sender_id || data.receiverdetails.is_online == 1) {
+                            var audio = new Audio('/notification .mp3')
+                            audio.play()
+                        }
+                        if (sender_id === data.data.receiver_id && receiver_id === data.data.sender_id) {
+
+
+                            let html = `<div class="chat-screen-inner" id="` + data.data.id + `">
+                        <div class="person-pic">
+                            <img src="`+ data.receiverdetails.image + `" alt="" class="img-fluid" />
+                            <span>16:20</span>
+                        </div>
+                        <div class="chat-box">
+                            <p>`+ data.data.message + `</p>
+                        </div>
+                    </div>`
+                            $('.chat-screen').append(html)
+
+
+
+                        }
+
+                        scrollChat()
+                    })
+
+                    var datearray = []
+                    // load old chats 
+                    socket.on('loadchats', (data) => {
+
+
+                        $('.chat-screen').html('')
+                        var chats = data.chats
+                        let html = '', datearray = []
+
+                        for (let x = 0; x < chats.length; x++) {
+                            let addClass, img, image
+
+                            for (let i = 0; i < chats[x]['date'].length; i++) {
+
+                                if (chats[x]['date'] != chats[i]['date']) {
+                                    html += `<div class='datedisplay' id='` + chats[x]['id'] + `-date'>` + chats[x]['date'] + `</div>`
+                                    break
+                                }
+                            }
+
+                            if (chats[x]['sender_id'] == sender_id) {
+                                addClass = 'chat-screen-inner reply-screen'
+                                img = ' <button class="btn delete-icon" ><i class="fa fa-trash"></i></button><button class="btn edit-icon" ><i class="fa fa-edit"></i></button>'
+                            }
+                            else {
+                                addClass = 'chat-screen-inner'
+                                img = ''
+                            }
+                            html += `<div class="` + addClass + `" data-id="` + chats[x]['id'] + `" id="` + chats[x]['id'] + `-chat">
+                        <div class="person-pic">
+                            <img src="`+ chats[x]['sender']['image'] + `" alt="" class="img-fluid" />
+                            <span>`+ chats[x]['time'] + `</span>
+                        </div>
+                        <div class="chat-box">
+                            <p id="`+ chats[x].id + `-text" data-id=` + chats[x].id + `>` + chats[x].message + img + `  </p>
+                            
+                            
+                        </div>
+                    </div>`
+                        }
+
+                        $('.chat-screen').append(html)
+                        // $('.delete-icon').hide()
+                        // $('.edit-icon').hide()
+                        scrollChat()
+                    })
+
+                    let chatsid = $('.chat-screen-inner').attr('data-id')
+                    console.log('sddfgg', chatsid)
+                    $(document).on('click', ` #` + chatsid + `-chat`, function () {
+                        $('.delete-icon').show()
+                        $('.edit-icon').show()
+                    })
+                    function scrollChat() {
+                        $('.chat-screen').animate({
+                            scrollTop: $('.chat-screen').offset().top + $('.chat-screen')[0].scrollHeight
+                        }, 0)
+                    }
+
+                    $(document).on('click', '.delete-icon', function () {
+                        let chatid = $(this).parent().parent().parent().attr('data-id')
+                        let confirmdelete = confirm('Are you sure you want to delete this chat')
+                        if (confirmdelete == true) {
+                            $.ajax({
+                                url: '/deletechat',
+                                type: "POST",
+                                data: {
+
+                                    id: chatid
+                                },
+                                success: function (response) {
+                                    if (response.success) {
+                                        $('#' + chatid + '-chat').remove()
+                                        $('#' + chatid + '-date').remove()
+                                    }
+                                    else {
+                                        alert(response.msg)
+                                    }
+                                }
+                            });
+                        }
+
+                    })
+                    $(document).on('click', '.edit-icon', function () {
+                        let meessageid = $(this).parent().parent().parent().attr('data-id')
+                        let premessage = $('#' + meessageid + '-text').text()
+                        $('#message').val(premessage)
+                        $('.person-action').html('<button type="button" class="btn btn-primary update-message">Update</button>')
+                        $(document).on('click', '.update-message', function () {
+                            let updatemessage = $('#message').val()
+                            console.log(updatemessage)
+                            $.ajax({
+                                url: '/updatechat',
+                                type: "POST",
+                                data: {
+                                    id: meessageid,
+                                    message: updatemessage
+                                },
+                                success: function (response) {
+                                    if (response.success) {
+                                        $("#message").val('');
+                                        $('.person-action').html('<button type="submit" class="addbtn"><i><img src="images/play.svg" class="svgImg"alt="" /></i></button>')
+                                        $("#" + response.data.id + "-text").html(response.data.updatedata.message + `<button class="btn delete-icon" ><i class="fa fa-trash"></i></button><button class="btn edit-icon" ><i class="fa fa-edit"></i></button>`)
+                                        //                 let html = `<div class="chat-screen-inner reply-screen" id="` + response.data.id + `">
+                                        //     <div class="person-pic">
+                                        //         <img src="<%=user.image%>" alt="" class="img-fluid" />
+                                        //         <span>16:20</span>
+                                        //     </div>
+                                        //     <div class="chat-box">
+                                        //         <p>`+ chat + `<img
+                                        //                 src="images/delete.svg" alt="" class="deleteImg" /></p>
+                                        //     </div>
+                                        // </div>`
+                                        //                 $('.chat-screen').append(html)
+                                        // socket.emit('newchat', { data: response.data, image: response.receiverimage })
+                                        // scrollChat()
+                                    }
+                                    else {
+                                        alert(response.msg)
+                                    }
+                                }
+                            })
+                        });
+
+                    })
+                });
+
+
+
+
+
+            </script>
+
+            <%- include('layouts/footer.ejs')%>

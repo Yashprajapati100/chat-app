@@ -1,0 +1,718 @@
+
+
+@media (max-width:1366px) {
+  .properties-dec h3{font-size: 16px;line-height: 20px;}
+  .propertiesList{padding: 15px;}
+  h4{font-size: 20px; line-height: 24px;}
+  .properties-row .properties-cod {
+    padding: 0 5px;
+  }
+
+
+  .cartRow h4{font-size: 18px;}
+ 
+  .location label i {
+    width: 14px;
+    height: 14px;}
+    .location label{font-size: 13px;}
+
+
+    .buttonOuter .default-btn, .buttonOuter .border-btn{font-size: 16px;      line-height: 20px;}
+    .propertiesDetails .properties-dec h3{font-size: 28px;}
+
+    .propertiesBoxListView .propertiesList{padding-right: 15px;}
+
+
+    .menuBox li a{font-size: 16px;}
+
+    .modalRightBox h2{font-size: 28px;line-height: 32px;}
+
+    #listView .propertiesBox .properties-img{height: 205px;}
+    .bidsListIngRow .ongoingBids + .ongoingBids {
+      padding-left: 6px;
+      margin-left: 6px;
+    }
+  
+    .featuredListings {padding: 0 30px;}
+    .featuredListings .owl-nav .owl-prev{left: -20px;}
+    .featuredListings .owl-nav .owl-next{right: -20px}
+
+    .mainBanner h1{font-size: 46px;line-height: 53px;}
+    .near-by-properties{padding-bottom: 145px;}
+    .mainBanner p{font-size: 16px;line-height: 20px;}
+    .main-title h2{font-size: 34px;      line-height: 42px;}
+    .main-title p {
+      font-size: 18px;}
+      .listing-info h3{  font-size: 24px;line-height: 32px;}
+}
+
+
+
+@media (max-width:1199px) {
+    .featuredOuter{padding:10px 65px 20px 15px;}
+    .bookAppointment .propertiesList,    .propertiesList{padding: 17px 15px;}
+    .citiesArrow{width: 60px;      height: 45px;}
+    .citiesArrow i {
+      width: 22px;
+      height: 20px;}
+      .propertiesBoxListView .properties-cod i,    .properties-cod i{width: 12px;      height: 18px;}
+    .mainBanner h1{font-size: 38px;line-height: 42px;margin-bottom: 10px;}
+    .search .form-control{font-size: 16px;}
+    .main-title h2{font-size: 32px;
+      line-height: 38px;}
+    .main-title p{font-size: 16px;line-height: 22px;}
+    .featuredOuter strong{font-size: 20px; line-height: 24px;}
+    .properties-dec h3{font-size: 16px;line-height: 20px;}
+    .menuBox li a{font-size: 16px;}
+    #listView .default-btn{padding: 6px 15px;}
+ .border-btn{padding:8px 10px;}
+    .cartRow p{font-size: 13px;}
+
+    .cartRow{align-items: center;}
+
+    .likeImg{right: 15px;width: 30px;      height: 30px;      top: 15px;}
+
+    .filterTabBox{padding: 84px 25px 50px;}
+
+    .sliderLeft{padding-right: 0;}
+    .propertiesDetails{padding: 0 15px; margin: 0;}
+
+    .propertiesDetails .properties-dec h3{font-size: 26px;}
+    .propertiesDetails .location label i{top: 2px;}
+    .propertiesDetails .location label{font-size: 16px; line-height: 20px;}
+    .propertiesDetails .cartRow .default-btn{font-size: 14px;}
+    .propertiesDetails .cartRow h4{font-size: 22px; line-height: 26px;}
+    .propertiesDesc h4{font-size: 20px;}
+    .description li{font-size: 14px; line-height: 18px;margin-bottom: 16px;}
+    .cSliderOuter .cSlider__item img {
+      max-height: 450px;
+      min-height: 450px;}
+      .slick-slide img{height: 95px;}
+      h4{font-size: 20px;}
+      .similar-property h5{font-size: 22px; line-height: 26px;}
+
+      .makeOffer-container h2{font-size: 22px;line-height: 26px;}
+      .makeOfferDetailOuter h3{font-size: 18px;        line-height: 28px;}
+      .near-by-properties{padding-bottom: 115px;padding-top: 80px;}
+
+      .explore-apartment-type{padding-top: 80px;}
+      .elementor-slider{margin: 80px 0 0;padding: 100px 0px 100px 0px;}
+      .properties-for-rent {
+        padding: 80px 0;
+      }
+      .tabFilterOuter .rentOuterBtn button{padding: 7px 5px;}
+
+      .ongoingBids.last-child h4{font-size: 14px;}
+
+      .propertiesBoxListView .properties-row{padding-bottom: 10px;margin-bottom: 10px; padding-top: 10px;}
+
+      .tabFilterOuter #lost .default-btn{padding: 8px 15px;}
+      .expired-label{padding: 8px 18px;}
+
+      .bookTourOuter .buttonOuter {
+        margin-top: 60px}
+        .innerTitle{font-size: 22px; line-height: 26px;}
+
+        .formOuterBox .default-btn{font-size: 18px;          line-height: 22px;}
+        .thankyouOuter h3 {
+          font-size: 35px;
+          line-height: 40px;}
+          .thankyouOuter p{font-size: 16px;}
+
+          .addPropertyOuter h2, .reasonnotapporve h2{font-size: 22px;line-height: 26px;}
+          .subscriptionPlan h3 {
+            font-size: 24px;
+            line-height: 28px;}
+            .planDetail h5{font-size: 22px;              line-height: 26px;}
+
+            .h3Flex h3 {
+              width: 73%;}
+              .status-label{margin-right: 5px;}
+              .custom-table-main .table th, .custom-table-main .table td { padding-left: .75rem;}
+
+              .ongoingBidsBox{padding-right: 15px;}
+
+              .statusLabelOut {
+                padding-right: 0;
+              }
+
+              .search-btn{padding: 15px;}
+              .advanced-search-button{padding: 0;}
+              .listing-info{padding: 20px ;}
+              .listing-info h3{font-size: 24px;line-height: 32px;}
+
+        
+              .features-amenities ul li{font-size: 14px;}
+              .listing-title-area h3{font-size: 24px; line-height: 28px;}
+              .properties-price h4{font-size: 24px;}
+              .properties-price h4 small {
+                font-size: 14px;
+              }
+             
+
+
+            
+}
+
+@media (max-width:1023px) {
+    .mainBanner h1 {
+        font-size: 32px;
+        line-height: 41px;
+      }
+      .featuredOuter {
+        padding:10px 45px 20px 10px; 
+      }
+      
+      .featuredOuter strong {
+        font-size: 16px;
+        line-height: 22px; margin: 0;
+      }
+      .citiesArrow {
+        width: 40px;
+        height: 35px;
+      }
+      .citiesArrow i {
+        width: 16px;
+        height: 14px;
+      }
+      .featuredOuter i{font-size: 14px;
+        line-height: 18px;}
+        .arrowImg{right: 10px;bottom: 10px; width: 30px;}
+        .propertiesBox{margin-bottom: 30px;}
+        .near-by-properties{padding-bottom: 100px;padding-top: 80px;}
+        .footerUl li a{font-size: 14px;}
+        .copyright{font-size: 12px;}
+            .social-media li{margin-left: 18px;}
+
+            .loginModal .modal-dialog{padding: 0 15px;}
+            .modalRightBox{padding: 44px 30px 22px 30px;}
+            .buttonOuter .default-btn, .buttonOuter .border-btn{font-size: 16px;line-height: 20px;              padding: 12px 10px;}
+            .socialButton a{font-size: 16px; padding: 12px 0 12px 57px;              line-height: 20px;}
+            .socialButton i{left: 20px;              top: 12px;width: 18px;              height: 20px;}
+
+            .container-fluid {
+              padding: 0 15px;
+            }
+            .logo{width: 230px;height:35px;}
+            .innerMenu .menuBox li {
+              margin-right: 25px;}
+              .subMenuOuter{width:205px;}
+                .properties-listing-header h3{font-size: 14px;line-height: 18px;}
+                .properties-list-box{padding: 80px 15px 30px;}
+                .properties-dec h3 {
+                  font-size: 16px;
+                  line-height: 20px;
+                }
+
+
+                #gridView .col-md-6{padding: 0 3px;}
+                #gridView > .row{margin: 0 -3px;}
+                #gridView .propertiesList {
+                  padding: 15px 10px;
+                }
+                  #gridView  .border-btn{padding: 8px; font-size: 13px;}
+                  #gridView  .cartRow p{font-size: 11px;}
+
+                  .cSliderOuter .cSlider__item img{max-height: 350px;                    min-height: 350px;}
+                  .propertiesDetails .properties-dec h3 {
+                    font-size: 22px;
+                    line-height: 26px;
+                  }
+                  .propertiesDetails .location label{font-size: 14px;}
+
+                  .makeOffer-container h2 {
+                    font-size: 18px;
+                    line-height: 22px;
+                  }
+                  .makeOfferDetailOuter .cartRow{font-size: 22px;                    line-height: 26px;}
+                  .makeOffer-container {
+                    max-width: 720px;
+                  }
+
+                  .main-title h2 {
+                    font-size: 28px;margin-bottom: 15px;
+                    line-height: 32px;
+                  }
+
+             .properties-listing-outer    .properties-row .properties-cod{font-size: 13px;}
+
+                  .marginLg{margin-bottom: 10px;}
+                  .rentOuter {margin-top: 10px;}
+
+                  .bookTour{max-width: 100%;padding: 0 0;}
+                  .bookTourOuter .buttonOuter{padding-left: 0; padding-right: 0;margin-top: 30px;}
+                  .bookAppointment .colBg{padding: 30px 30px 20px ;}
+
+                  .addPropertyOuter h2 {
+                    font-size: 20px;
+                    line-height: 24px;
+                  }
+                  .subscriptionPlan .formOuter .default-btn {
+                    max-width: 200px;}
+
+                    .h3Flex h3 {
+                      width: 67%;
+                    }
+
+                    .bidsOuterButton{margin-top: 20px; justify-content: flex-start;}
+                    .bidsOuterButton .default-btn{margin-left: 0; margin-right: 10px;}
+                    .statusLabelOut{padding-right: 10px;}
+
+                    .searchBoxCol, .advanced-search-button{margin-top: 15px;}
+                    .advanced-search-button{padding-left: 15px;text-align: center;}
+                    .bannerImg{height: 70vh;}
+
+                    .bigImg{max-height:200px;object-fit: cover;}
+                    .properties-for-rent {
+                      padding-top: 100px;
+                    }
+                    .elementor-slider h2{font-size: 28px;}
+                    .elementor-slider p {
+                      font-size: 16px;}
+
+                     
+                      .properties-listing {
+                        -webkit-box-flex: 0;
+                        -ms-flex: 0 0 100%;
+                        flex: 0 0 100%;
+                        max-width: 100%; padding-left: 0;
+                      }
+.properties-listing-header {display: block; position: relative; margin-bottom: 30px;}
+.properties-listing-outer .filterTabBox {
+  padding:84px 30px 50px; display: block;
+  position: absolute;
+  z-index: 1;
+  left:-100%;width: 400px;
+  max-width: 100%;
+  z-index: 9999;
+  top: 0;
+  overflow-y: auto;
+  height: 100%;
+  background: #fff;
+ 
+}
+.filterActive .properties-listing-outer .filterTabBox {left: 0;}
+.closeFilter{display: block; position: absolute; right:20px; top: 20px; cursor: pointer;}
+.col-right-thumb .col-6 img{min-height: 88px;max-height: 88px;}
+                   
+.property-contact{margin-top: 30px;}
+}
+
+@media (max-width:767px) {
+ .properties-listing-outer .properties-row .properties-cod{font-size: 14px;}
+  .menuBox{display: block; text-align: center;}
+  .menuBox li{margin-right: 0;margin-bottom: 30px;}
+  .h-button{padding: 6px 18px !important;font-size: 14px;    line-height: 20px;}
+.navigationMenu {position:fixed; right:-100%; top:0; height:100%; overflow-y:auto; background:#104378; width:100%; z-index:99;display: block; padding: 100px 25px 50px;}
+.menu_toggle {width:25px; height:30px; padding-top:8px;margin-left: 10px; display:block;}
+.menu_toggle span {width:25px; height:3px; background:#fff; display:block; position:relative; margin:0 auto;}
+.menu_toggle span,.menu_toggle span::before,.menu_toggle span:after {background:#fff;}
+.menu_toggle span::before,.menu_toggle span:after {border-radius:5px;-moz-border-radius:5px;-webkit-border-radius:5px;-ms-border-radius:5px; background:#fff; height:3px; width:100%; content:""; position:absolute; right:0;}
+.menu_toggle span:after {bottom:-14px;}
+.menu_toggle span::before {width:80%; top:7px;}
+.menuOpen .navigationMenu {right:0;}
+.close_menu {position:absolute; z-index:1; right:0; top:0; height:50px; width:50px; overflow:hidden; text-indent:100%; white-space:nowrap; color:transparent; display:block;}
+.close_menu::after,.close_menu::before {content:''; position:absolute; left:50%; top:50%; bottom:auto; right:auto; height:20px; width:2px; background-color:#fff;}
+.close_menu::before {-webkit-transform:translateX(-50%) translateY(-50%) rotate(-45deg);-moz-transform:translateX(-50%) translateY(-50%) rotate(-45deg);-ms-transform:translateX(-50%) translateY(-50%) rotate(-45deg);-o-transform:translateX(-50%) translateY(-50%) rotate(-45deg); transform:translateX(-50%) translateY(-50%) rotate(-45deg);}
+.close_menu::after {-webkit-transform:translateX(-50%) translateY(-50%) rotate(45deg);-moz-transform:translateX(-50%) translateY(-50%) rotate(45deg);-ms-transform:translateX(-50%) translateY(-50%) rotate(45deg);-o-transform:translateX(-50%) translateY(-50%) rotate(45deg); transform:translateX(-50%) translateY(-50%) rotate(45deg);}
+
+
+.close_menu_search {position:absolute; z-index:1; right:0; top:0; height:50px; width:50px; overflow:hidden; text-indent:100%; white-space:nowrap; color:transparent; display:block;}
+.close_menu_search::after,.close_menu_search::before {content:''; position:absolute; left:50%; top:50%; bottom:auto; right:auto; height:20px; width:2px; background-color:#000;}
+.close_menu_search::before {-webkit-transform:translateX(-50%) translateY(-50%) rotate(-45deg);-moz-transform:translateX(-50%) translateY(-50%) rotate(-45deg);-ms-transform:translateX(-50%) translateY(-50%) rotate(-45deg);-o-transform:translateX(-50%) translateY(-50%) rotate(-45deg); transform:translateX(-50%) translateY(-50%) rotate(-45deg);}
+.close_menu_search::after {-webkit-transform:translateX(-50%) translateY(-50%) rotate(45deg);-moz-transform:translateX(-50%) translateY(-50%) rotate(45deg);-ms-transform:translateX(-50%) translateY(-50%) rotate(45deg);-o-transform:translateX(-50%) translateY(-50%) rotate(45deg); transform:translateX(-50%) translateY(-50%) rotate(45deg);}
+
+
+.container-fluid {
+    padding: 0 15px;
+  }
+  .logo{width: 160px;height: 32px;}
+  .innerMenu,  header{padding: 15px 0;}
+
+  .modal{padding: 20px 0;}
+
+  .featured-cities::before, .featured-cities::after, .near-by-properties::after{display: none;}
+  .featured-cities {margin-bottom: 50px;
+    padding-top: 50px;}
+    .main-title h2 {
+      font-size: 24px;
+line-height: 30px;
+      }
+      .main-title p {
+        font-size: 14px;
+        line-height: 18px;
+      }
+      .near-by-properties{padding:30px 0 30px;}
+      .explore-apartment-type{padding-top: 30px;}
+
+      .apartment-div {
+        margin-bottom: 10px;
+    }
+      .footerlogo .logo{margin: 0 auto 10px;}
+      .social-media{justify-content: center; margin-top: 10px;}
+      .copyright{text-align: center;
+        margin-top: 10px;}
+
+        .menuOpen{overflow: hidden;}
+        .loginModal .modal-dialog{padding: 0; margin: 0 10px;}
+        .modalRightBox h2{font-size: 26px;margin-bottom: 35px;          line-height: 30px;}
+        #forgotPassword,        .modalRightBox {
+          padding: 44px 15px 22px 15px;
+        }
+        .bottomLink{font-size: 14px;}
+        .styled-checkbox + label{font-size: 15px;}
+        .datepickerOuter .ui-datepicker-trigger,        .bookTourOuter .formOuter .icon,        .formOuter .icon {          width: 20px;          height: 20px;}
+
+        .navigationMenu .subMenuOuter{display: none; position: relative;width: 100%;          text-align: left;}
+          .innerMenu .menuBox li{margin: 0 0 30px 0;}
+          .innerMenu .menuBox li:hover .subMenuOuter{height: auto;}
+
+          .filtr-item {            width: 100% !important;}
+
+            .innerPage  .menu_toggle span, .innerPage  .menu_toggle span::before,  .innerPage  .menu_toggle span::after{background: #000;}
+           .innerPage  .menu_toggle{padding-top: 9px;}
+
+           .innerPage{padding-top: 70px; padding-bottom: 153px;}
+           .breadcrumb {margin-bottom: 30px;}
+           footer{margin-top: -158px;}
+           .innerMenu .menuBox > li > a{color: #fff;}
+
+           .properties-listing{position: relative; height: auto; top: 0;}
+
+           .properties-listing-header h3{padding-top: 3px;}
+           .properties-list-box{padding-top: 30px;}
+
+           #gridView{display: block !important;}
+
+
+           .filterTabBox{width: 100%;}
+           .filterTabBox {
+            padding: 75px 15px 30px;
+          }
+          .filterActive{overflow: hidden;}
+          .titleOuter{font-size: 14px; line-height: 18px;}
+          .amenitiesOuter .styled-checkbox + label::before {            width: 20px;            height: 20px;}            
+            .amenitiesOuter .styled-checkbox:checked + label::after{left: 5px;  top: 9px;}
+            .amenitiesOuter .custom-checkbox {
+              margin-bottom: 8px;
+            }
+            .buttonOuter .default-btn, .buttonOuter .border-btn{font-size: 14px;              line-height: 18px;padding: 12px 10px;}
+
+            .cSliderOuter .cSlider__item img {
+              max-height: 300px;
+              min-height: 300px;
+            }
+           
+            .description label {
+              width: 110px;
+            }
+            h4 {
+              font-size: 18px;
+            }
+            .features-amenities ul li{font-size: 14px;              line-height: 18px;}
+            .similar-property h5 {
+              font-size: 18px;
+              line-height: 22px;
+            }
+            .features-amenities{padding-top: 20px; margin-top: 20px; margin-bottom: 20px;}
+            .innerPage main {
+              padding-bottom: 30px;
+            }
+            .container{max-width: 100%;}
+
+            .sliderLeft{margin: 0 auto 30px; max-width: 480px;}
+
+            .breadcrumb li,.breadcrumb li a{font-size: 14px;              line-height: 17px;}
+            .breadcrumb li + li::after{top: 1px;}
+            .makeOffer-container h2 {
+              font-size: 16px;
+              line-height: 22px;
+            }
+            .makeOfferDetailOuter{padding: 25px 15px 10px;}
+            .makeOfferDetailOuter h3 {
+              font-size: 16px;
+              line-height: 22px;
+            }
+            .makeOfferDetailOuter h4 {
+              font-size: 14px;
+              line-height: 18px;}
+              .formOuter .form-control{font-size: 14px; padding-bottom: 10px;}
+              .makeOfferDetail .default-btn{max-width: 200px;}
+              .makeOfferDetail{padding-bottom: 30px;}
+              .makeOfferDetail .default-btn{margin: 30px auto 30px;}
+
+
+              .wrapper{padding-bottom: 158px;}
+
+              .simplefilter li{font-size: 14px;}
+
+              .propertiesBoxListView .propertiesList, .propertiesBoxListView .properties-img{-ms-flex: 0 0 100%;                flex: 0 0 100%;                max-width: 100%;}
+             #wonid  .propertiesBoxListView .likeImg{right: 45px;width: 25px;                height: 25px;                top: 10px;}
+          .propertiesBoxListView    .removeBids  {background: #fff;   right: 10px;            top: 10px;                 border-radius: 100%; position: absolute; }
+          .propertiesBoxListView .daysLabel {
+            left: 10px;
+            top: 10px;
+          }
+          .propertiesBoxListView .propertiesList{padding: 18px 15px 15px 15px;border-radius: 0 0 6px 6px;}
+          .propertiesBoxListView .properties-cod{padding: 0 9px;}
+           .properties-img .properties-img-list-view{border-radius: 6px 6px 0 0;}
+          .simplefilter .nav-link{padding: 0 12px 10px;}
+
+      
+          #ongoing    .h3Flex{display: block !important;}
+          .h3Flex span{display: flex;justify-content: space-between;}
+          .propertiesBoxListView .h3Flex span .union {
+            width: 12px;
+            height: 14px;
+          }
+          .propertiesBoxListView .location{margin-top: 0px;}
+          .ongoingBids + .ongoingBids {
+           margin: 0; padding:15px 0 0px;
+          }
+          
+          
+.ongoingBids+ .ongoingBids::after {
+
+  height:1px;
+  width: 100%;
+ 
+top: 6px;
+
+}
+
+.closeEnd{justify-content: space-between;}
+
+.innerTitle {
+  font-size: 18px;
+  line-height: 22px;
+}
+.bookAppointment .colBg {
+  padding: 30px 15px 20px;
+}
+.selectRadio{margin-right: 20px;}
+.bookTourOuter .buttonOuter{margin-top: 50px;}
+
+
+.paymentModal .modalRightBox {
+  padding: 30px 15px 22px 15px;
+}
+.appointmentDetail .description label{width: 75px;}
+.modalRightBox h2{font-size: 20px;line-height: 24px;}
+.formOuterBox label{font-size: 14px;}
+.formOuterBox .form-control{font-size: 14px; padding-bottom: 10px;}
+.formOuterBox .default-btn{font-size: 16px;  line-height: 20px;padding: 10px 10px;}
+
+
+.ownerOuter{padding: 0 15px 20px;  margin: 0 15px 20px;}
+.modalRightBox h2.modalTitle{line-height: 24px;font-size: 20px;padding: 30px 15px 15px;}
+.addVerificationDetails .buttonOuter .default-btn{max-width: 120px;}
+.addVerificationDetails .colBg{padding-top: 30px;}
+.downloadContractDocument h3 {
+  font-size: 16px;
+  line-height: 22px;}
+  .psdImg{max-width: 130px;}
+  .uploadFileOuter h3{font-size: 20px; line-height: 24px;}
+  .uploadFileOuter p {
+    font-size: 14px;
+    line-height: 22px}
+    .uploadFileOuter{padding: 43px 15px 30px;}
+    .thankyouOuter h3 {
+      font-size: 28px;
+      line-height: 32px;
+    }
+    .thankyouOuter p{font-size: 14px;line-height: 20px;}
+    .thankyouOuter  img{max-width: 110px;}
+
+    .addPropertyOuter h2 {
+      font-size: 18px;
+      line-height: 22px;
+    }
+    .addPropertyOuter .selectRadio{margin:  0 0 15px; display: inline-block;}
+    .addPropertyOuter .makeOfferDetailOuter {
+      padding: 30px 15px;
+    }
+    .addPropertyOuter .formOuter .default-btn {
+      max-width: 255px;}
+
+      .subscriptionPlan h3 {
+        font-size: 22px;
+        line-height: 26px;
+      }
+      .subscriptionPlan h4{font-size: 18px;}
+      .subscriptionPlan h4 span{font-size: 22px;}
+      .planDetail h5 {
+        font-size: 18px;
+        line-height: 22px;
+      }
+      .subscriptionPlan .formOuter .default-btn {
+        max-width: 150px;
+      }
+      .bankInfo{margin-top: 30px; margin-bottom: 0;}
+      .h3Flex h3 {
+        width: 90%;
+      }
+      .breadcrumb li + li{padding-left: 8px;
+        margin-left: 8px;}
+        .bidders-box{padding: 18px 15px 25px 70px;}
+        .biddersTop .price{right: 15px;font-size: 16px;}
+        .biddersTop{padding-right: 60px;}
+        .contactBid i {margin-right: 2px;
+          width: 15px;
+          height: 18px;}
+          .contactBid li + li{padding: 9px 0 0;  margin: 12px 0 0;  border-top: 1px solid #D3DEE8;}
+
+.contactBid li + li::before{display: none;}
+     
+.custom-select-outer{padding-left: 0;margin-top: 10px;}
+.contactBid a{font-size: 13px;}
+
+.reasonnotapporveOuter {
+  padding: 50px 15px 38px;
+}
+.reasonnotapporve h2{font-size: 18px;  line-height: 22px;}
+
+  /*  */
+  .form-wizard .form-wizard-header { padding-left: 10px; padding-right: 10px; }
+  .addPropertyStep .makeOfferDetailOuter { padding: 20px 0; }
+  .form-wizard .form-wizard-steps li .property-step-name { font-size: 12px; line-height: normal; }
+  .form-wizard .form-wizard-steps li span { border-width: 1px; width: 16px; height: 16px; }
+  .form-wizard .form-wizard-steps li.active span::after { width: 8px; height: 8px; }
+  .form-wizard .wizard-fieldset .property-step-btn { min-width: inherit; margin: 0px; }
+  .form-wizard .wizard-fieldset .property-step-btn a { font-size: 16px; }
+  .form-wizard .wizard-fieldset { padding-top: 15px; }
+  .addPropertyStep .upload-area .uploded-row { flex-wrap: wrap; }
+  .addPropertyStep .upload-area .uploded-row .upload-box { min-width: 80px; margin: 5px; }
+  .ongoingBidsBox{margin-bottom: 20px;}
+  .plan-list { flex-direction: column;}
+  .plan-list li { border: none; border-bottom: 1px solid #D3DEE8; padding: 8px;}
+  .plan-list li:last-child { border: none;}
+  .ongoingfilter { overflow-x: auto; white-space: nowrap; padding-bottom: 10px;}
+  .add-property-btn { padding: 8px;}
+
+  #listView{display: none !important;}
+  .detailRowDesc .ongoingBids{margin-bottom: 10px;}
+  .detailRowDesc .ongoingBids + .ongoingBids::after{height: 37px;width: 1px;}
+  .detailRowDesc  .ongoingBids + .ongoingBids {
+    padding-left: 20px;
+    margin-left: 20px; padding-top: 0;
+  }
+  .detailRowDesc{margin-bottom: 15px;}
+
+  .mainBanner .owl-nav{left: 0; top: auto; bottom: 30px;-webkit-transform: translate(0, 0);display: block;margin: 0 auto; right: 0; text-align: center;
+    height: auto;
+    transform: translate(0, 0);}
+    .mainBanner .owl-nav .owl-prev, .mainBanner .owl-nav .owl-next{display: inline-block !important; margin: 0 10px;}
+    .mainBanner {text-align: center;}
+    .bannerImg {
+      height: 48vh;
+    }
+    .slide-price{font-size: 26px;margin-bottom: 30px;}
+    .mainBanner h1 {
+      font-size: 27px;
+      line-height: 38px;
+    }
+    .slide-atts span{font-size: 16px;}
+    .default-btn{padding: 12px 20px;}
+    .slide-atts {
+      margin-bottom: 30px;
+    }
+    .mainBanner .owl-nav .owl-prev span, .mainBanner .owl-nav .owl-next span{width: 40px;      height: 40px;line-height: 33px;}
+    .exploreType {
+      padding-top: 30px;
+    }
+    .listing-info h3 {
+      font-size: 20px;
+      line-height: 26px;
+    }
+    .listing-count {
+      font-size: 14px;}
+      .properties-for-rent {
+        padding-top: 50px;
+      }
+      .elementor-slider{margin-top: 80px;padding: 80px 0; margin-bottom: 0;}
+      .elementor-slider h2 {
+        font-size: 22px;
+      }
+      .outer-btn a{padding: 12px 15px;margin: 0 0 10px; display: block;}
+      
+      .advanced-search-div {height: 250px;text-align: left;
+        overflow-y: auto;
+        padding: 30px 15px 40px;}
+
+        .featuredListings .owl-nav{text-align: center; margin-bottom: 20px;}
+        .featuredListings .owl-nav .owl-prev{left: auto; right: auto;margin: 0 5px;bottom: 0;top: auto; position: relative;}
+        .featuredListings .owl-nav .owl-next{left: auto; right: auto;margin: 0 5px;bottom: 0;top: auto;position: relative;}
+        .featuredListings {
+          padding: 0;
+        }
+        .bannerImg{display: none;}
+        .mainBanner {background: url(../images/shutterstock_436573321-min-1.jpg) no-repeat 0 0;padding-top: 100px;padding-bottom: 50px;}
+        .banner-content{position: relative;}
+
+        .properties-listing-outer .filterTabBox{width: 295px;}
+        .properties-listing-outer .filterTabBox {
+          padding: 84px 20px 50px;}
+
+          .planDetail{padding-top: 0;}
+          .innerPage  .menuBox > li > a:after{background: #fff;}
+
+          .col-chat-right, .col-chat-left{width: 100%; margin-bottom: 30px;}
+          .chat-screen-container{display: block;}
+          .chat-person{height: auto;}
+          .col-chat-right{border-left: 1px solid #c7c7c8;}
+
+          .choose-position .select2-container--default .select2-selection--single{height: 40px;
+            line-height: 40px;font-size: 14px;}
+            .choose-position .select2-container--default .select2-selection--single .select2-selection__arrow{top: 17px;}
+            .select2.select2-container--open .selection .select2-selection__arrow b{top: -4px !important;}
+            .searchInput{height: 40px; font-size: 14px;}
+            .advanced-search-div h4{font-size: 14px; line-height: 18px;}
+            .output{height: 40px; line-height: 40px;}
+
+            .listing-title-area h3 {
+              font-size: 22px;
+              line-height: 25px;
+            }
+            .listing-title-area{margin-bottom: 15px;}
+            .properties-flex{justify-content: start; margin-top: 10px;}
+            .listing-title-area .location label{font-size: 14px;}
+            .col-right-thumb{margin-top: 30px;}
+            .col-bg{padding: 15px;}
+            .property-owner{display: block;}
+            .property-owner-detail{margin-bottom: 10px;}
+            .list-inline-item{margin-bottom: 5px;}
+            .description li{padding-left: 130px;}
+            .selectRadio label{font-size: 14px;}
+            .properties-price h4{font-size: 22px;}
+         
+    }
+
+@media (max-width:479px) {
+  .featuredOuter {
+    padding: 10px 35px 10px 10px;
+  }
+
+  .featuredOuter strong {
+    font-size: 14px;
+    line-height: 18px;
+   
+  }
+  .featuredOuter i {
+    font-size: 13px;
+    line-height: 16px;
+  }
+
+  .citiesArrow {
+    width: 30px;
+    height: 25px;
+  }
+  .citiesArrow i {
+    width: 12px;
+    height: 11px;
+  }
+  .add-property-btn {
+    font-size: 16px;
+  }
+
+
+}
